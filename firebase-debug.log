@@ -1,0 +1,150 @@
+[debug] [2024-06-09T16:54:41.804Z] ----------------------------------------------------------------------
+[debug] [2024-06-09T16:54:41.806Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Luciana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-09T16:54:41.806Z] CLI Version:   13.11.2
+[debug] [2024-06-09T16:54:41.806Z] Platform:      win32
+[debug] [2024-06-09T16:54:41.806Z] Node Version:  v20.13.1
+[debug] [2024-06-09T16:54:41.807Z] Time:          Sun Jun 09 2024 13:54:41 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-06-09T16:54:41.807Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-09T16:54:41.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T16:54:41.812Z] > authorizing via signed-in user (lulumonteiroc@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Luciana\Documents\backend-condominio-rezende
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-09T16:55:15.887Z] > refreshing access token with scopes: []
+[debug] [2024-06-09T16:55:15.889Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-09T16:55:15.889Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T16:55:16.124Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-09T16:55:16.124Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-09T16:55:16.142Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-06-09T16:55:17.300Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-06-09T16:55:17.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project condominio-rezende (condominio-rezende) 
+[info] 
+=== Firestore Setup
+[debug] [2024-06-09T16:55:22.067Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/firestore.googleapis.com [none]
+[debug] [2024-06-09T16:55:22.067Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/firestore.googleapis.com x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:23.255Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/firestore.googleapis.com 200
+[debug] [2024-06-09T16:55:23.255Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/firestore.googleapis.com [omitted]
+[debug] [2024-06-09T16:55:23.255Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default) [none]
+[debug] [2024-06-09T16:55:24.391Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default) 200
+[debug] [2024-06-09T16:55:24.391Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default) {"name":"projects/condominio-rezende/databases/(default)","uid":"6e7dbee3-c8d5-47da-a4a4-0106c8eb3bc9","createTime":"2024-06-08T13:37:40.703370Z","updateTime":"2024-06-08T13:37:40.703370Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-06-09T15:55:32.173080Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IO6U0bT+zoYDMPz609yRzIYD"}
+[debug] [2024-06-09T16:55:24.391Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-06-09T16:55:24.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T16:55:24.391Z] > authorizing via signed-in user (lulumonteiroc@gmail.com)
+[debug] [2024-06-09T16:55:24.391Z] [iam] checking project condominio-rezende for permissions ["firebase.projects.get"]
+[debug] [2024-06-09T16:55:24.392Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions [none]
+[debug] [2024-06-09T16:55:24.392Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:24.392Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-09T16:55:25.355Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions 200
+[debug] [2024-06-09T16:55:25.355Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-09T16:55:29.926Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/releases pageSize=10&pageToken=
+[debug] [2024-06-09T16:55:31.182Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/releases 200
+[debug] [2024-06-09T16:55:31.183Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/releases {"releases":[{"name":"projects/condominio-rezende/releases/cloud.firestore","rulesetName":"projects/condominio-rezende/rulesets/4eb291c8-41d2-4a80-b451-3c3a29cfbb1f","createTime":"2024-06-08T13:37:45.709524Z","updateTime":"2024-06-08T13:37:45.709524Z"}]}
+[debug] [2024-06-09T16:55:31.183Z] Found ruleset: projects/condominio-rezende/rulesets/4eb291c8-41d2-4a80-b451-3c3a29cfbb1f
+[debug] [2024-06-09T16:55:31.183Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/rulesets/4eb291c8-41d2-4a80-b451-3c3a29cfbb1f [none]
+[debug] [2024-06-09T16:55:32.253Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/rulesets/4eb291c8-41d2-4a80-b451-3c3a29cfbb1f 200
+[debug] [2024-06-09T16:55:32.254Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/condominio-rezende/rulesets/4eb291c8-41d2-4a80-b451-3c3a29cfbb1f [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-09T16:55:36.591Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-06-09T16:55:36.593Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-06-09T16:55:37.724Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-06-09T16:55:37.724Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-06-09T16:55:37.725Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-06-09T16:55:37.725Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/condominio-rezende/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/condominio-rezende/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-06-09T16:55:37.736Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-09T16:55:37.736Z] > authorizing via signed-in user (lulumonteiroc@gmail.com)
+[debug] [2024-06-09T16:55:37.736Z] [iam] checking project condominio-rezende for permissions ["firebase.projects.get"]
+[debug] [2024-06-09T16:55:37.736Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions [none]
+[debug] [2024-06-09T16:55:37.736Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:37.736Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-09T16:55:38.567Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions 200
+[debug] [2024-06-09T16:55:38.568Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/condominio-rezende:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-09T16:55:38.568Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T16:55:38.568Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:38.569Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-09T16:55:38.569Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:39.580Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-09T16:55:39.580Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-09T16:55:39.613Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T16:55:39.613Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-06-09T16:55:39.613Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-06-09T16:55:39.613Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:40.856Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-06-09T16:55:40.856Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-06-09T16:55:50.858Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-09T16:55:50.858Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/condominio-rezende
+[debug] [2024-06-09T16:55:51.898Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-09T16:55:51.898Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/condominio-rezende/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-06-09T16:57:02.944Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/condominio-rezende [none]
+[debug] [2024-06-09T16:57:03.343Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/condominio-rezende 200
+[debug] [2024-06-09T16:57:03.343Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/condominio-rezende {"projectId":"condominio-rezende","projectNumber":"484628206540","displayName":"condominio-rezende","name":"projects/condominio-rezende","resources":{"hostingSite":"condominio-rezende"},"state":"ACTIVE","etag":"1_5632def9-a907-4b99-9ddf-f0e2d53f0aa1"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-06-09T16:57:20.855Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-06-09T16:57:20.963Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-06-09T16:57:20.963Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.2","browserURL":"https://www.gstatic.com/firebasejs/10.12.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.2/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.2/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Luciana\Documents\backend-condominio-rezende is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=477308827&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-06-09T16:57:37.920Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-06-09T16:57:37.920Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-06-09T16:57:38.279Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-06-09T16:57:38.279Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-06-09T16:57:38.283Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-06-09T16:57:38.645Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-06-09T16:57:38.645Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"lucianamcedro","id":86168060,"node_id":"MDQ6VXNlcjg2MTY4MDYw","avatar_url":"https://avatars.githubusercontent.com/u/86168060?v=4","gravatar_id":"","url":"https://api.github.com/users/lucianamcedro","html_url":"https://github.com/lucianamcedro","followers_url":"https://api.github.com/users/lucianamcedro/followers","following_url":"https://api.github.com/users/lucianamcedro/following{/other_user}","gists_url":"https://api.github.com/users/lucianamcedro/gists{/gist_id}","starred_url":"https://api.github.com/users/lucianamcedro/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lucianamcedro/subscriptions","organizations_url":"https://api.github.com/users/lucianamcedro/orgs","repos_url":"https://api.github.com/users/lucianamcedro/repos","events_url":"https://api.github.com/users/lucianamcedro/events{/privacy}","received_events_url":"https://api.github.com/users/lucianamcedro/received_events","type":"User","site_admin":false,"name":"Luciana Cedro","company":"NTT DATA","blog":"https://www.linkedin.com/in/lucianamcedro/","location":"Divinópolis/MG","email":"luciana_cedro@hotmail.com","hireable":true,"bio":"Cursando Analise e Desenvolvimento de Sistema.","twitter_username":null,"public_repos":48,"public_gists":0,"followers":26,"following":4,"created_at":"2021-06-19T19:26:41Z","updated_at":"2024-05-12T15:35:26Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":277986,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as lucianamcedro 
+[info] 
